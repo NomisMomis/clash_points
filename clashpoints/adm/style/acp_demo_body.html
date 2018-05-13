@@ -1,0 +1,31 @@
+<!-- INCLUDE overall_header.html -->
+
+<h1>{L_ACP_POINTS_TITLE}</h1>
+<p>{L_ACP_DESCRIPTION}</p>
+<form id="acp_board" method="post" action="{U_ACTION}">
+
+	<fieldset>
+			<legend>{L_SETTINGS}</legend>
+		<dl>
+			<dt><label for="reg_points">{L_POINTS_ON_REG}{L_COLON}</label><br /><span>{L_POINTS_ON_REG_EXPLAIN}</span></dt>
+			<dd><input type="text" id="reg_points" name="reg_points" value="{REG_POINTS}" maxlength="8" size="10" /> {POINTS_NAME}</dd>
+		</dl>
+		<dl>
+			<dt><label for="forum_topic">{L_POINTS_PERTOPIC}{L_COLON}</label><br /><span>{L_POINTS_PERTOPIC_EXPLAIN}</span></dt>
+			<dd><input type="text" id="forum_topic" name="forum_topic" value="{FORUM_TOPIC}" maxlength="8" size="10" /> {POINTS_NAME}</dd>
+		</dl>
+		<dl>
+			<dt><label for="forum_reply">{L_POINTS_PERREPLY}{L_COLON}</label><br /><span>{L_POINTS_PERREPLY_EXPLAIN}</span></dt>
+			<dd><input type="text" id="forum_reply" name="forum_reply" value="{FORUM_REPLY}" maxlength="8" size="10" /> {POINTS_NAME}</dd>
+		</dl>
+
+			</fieldset>
+
+		<fieldset class="submit-buttons">
+			<input class="button" type="submit" id="submit_points" name="submit_points" value="{L_SUBMIT}" />&nbsp;
+
+			{S_FORM_TOKEN}
+		</fieldset>
+</form>
+
+<!-- INCLUDE overall_footer.html -->

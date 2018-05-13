@@ -1,0 +1,3 @@
+nomismomis_clashpoints_controller:
+    path: /demo/{name}
+    defaults: { _controller: nomismomis.clashpoints.controller:handle }
